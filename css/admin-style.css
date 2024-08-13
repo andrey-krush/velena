@@ -1,0 +1,19 @@
+div.widget-liquid-left{
+    width: 28% !important;
+}
+div.widget-liquid-right{
+    width: 68% !important;
+}
+#widgets-left .widget{
+    max-width: 100% !important;
+    width: 100% !important;
+}
+#widgets-right>*{
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.links-wysiwyg .mce-btn-group .mce-btn:not([aria-label="Insert/edit link (⌘K)"]){
+    display:none
+}
+

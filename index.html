@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Velena</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <script  src="https://code.jquery.com/jquery-3.6.4.min.js"  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="  crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBVG_LDO30Tqov1j1PCgUFX-3vwVhviahU"></script>
+</head>
+
+<body>
+  <div class="global-wrapper" style="padding-top: 150px">
+    <div class="main" style="padding-top: 0;">
+      <div class="mbox">
+        <div class="head-line">
+          <h1>Velena 👨‍💻 </h1>
+        </div>
+        <div class="wrap">
+          <h5>Inner pages</h5>
+          <ol class="box">
+            <li>
+                <a href="main.html">Main</a>
+            </li>
+            <li>
+                <a href="about-page.html">About</a>
+            </li>
+            <li>
+                <a href="articles.html">Articles</a>
+            </li>
+            <li>
+                <a href="publication-page.html">Publication</a>
+            </li>
+            <li>
+                <a href="cart.html">Cart</a>
+            </li>
+            <li>
+                <a href="account.html">Account settings</a>
+            </li>
+            <li>
+                <a href="account-orders.html">Account orders</a>
+            </li>
+            <li>
+                <a href="register.html">Register</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="product-list.html">Product list</a>
+            </li>
+            <li>
+                <a href="product.html">Product</a>
+            </li>
+            <li>
+                <a href="catalogue-page.html">Catalogue</a>
+            </li>
+            <li>
+                <a href="foropt-page.html">Foropt</a>
+            </li>
+            <li>
+                <a href="forrozn-page.html">Forrozn</a>
+            </li>
+            <li>
+                <a href="search-results.html">Search results</a>
+            </li>
+            <li>
+                <a href="favourites.html">Favourites</a>
+            </li>
+            <li>
+                <a href="not-found.html">404</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            background-color: #fafafa;
+            color: #212121;
+            margin: 0;
+        }
+
+        .head-line {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .head-line h1 {
+            margin: 0 auto;
+            padding: 20px 10px;
+            max-width: 1280px;
+            min-height: 68px;
+            box-sizing: border-box;
+            color: #000;
+            font-size: 24px;
+            word-wrap: break-word;
+        }
+
+        .wrap {
+            padding: 10px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h5 {
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            max-width: 1280px;
+            margin: 30px 0 10px;
+            padding: 0 20px;
+            background-color: #fafafa;
+            /* font-family: $ ff-heronew-regular; */
+            font-size: 30px;
+        }
+
+        h5:before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 1280px;
+            background-color: #eaeaea;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        a {
+            color: #212121;
+            text-decoration: none;
+        }
+
+        a.not-ready {
+            opacity: .5;
+        }
+        @media (min-width: 992px) {
+            a:hover {
+                color: #212121;
+                text-decoration: underline;
+            }
+        }
+        .box {
+            padding: 20px 40px;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 1280px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            border: 1px solid #eaeaea;
+            background-color: #fff;
+            text-align: left;
+            -webkit-columns: 210px auto;
+            columns: 210px auto;
+            -webkit-column-gap: 50px;
+            column-gap: 50px;
+            -webkit-column-rule: 1px solid #f2f2f2;
+            column-rule: 1px solid #f2f2f2;
+        }
+
+        ol,
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            word-wrap: break-word;
+            display: inline-block;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px 15px 10px 40px;
+            position: relative;
+        }
+
+        li a::before {
+            position: absolute;
+            display: inline-block;
+        }
+
+        ol {
+            counter-reset: item;
+        }
+
+        ol li {
+            counter-increment: item;
+        }
+
+        ol li a::before {
+            content: counter(item, decimal-leading-zero) ".";
+            top: 13px;
+            left: 0;
+            color: #64b5f6;
+            font-size: 12px;
+            z-index: 10;
+        }
+
+        ol li a:visited::before {
+            color: #ba68c8;
+        }
+
+        ul li a::before {
+            content: '';
+            top: 18px;
+            left: 8px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #64b5f6;
+        }
+
+        ul li a:visited::before {
+            background-color: #ba68c8;
+        }
+    </style>
+  </div>
+</body>
+</html>

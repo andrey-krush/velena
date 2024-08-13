@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Velena</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <script  src="https://code.jquery.com/jquery-3.6.4.min.js"  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="  crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBVG_LDO30Tqov1j1PCgUFX-3vwVhviahU"></script>
+</head>
+
+<body class="page__body" >
+  <div class="site-container">
+    <header class="header ">
+  <div class="header__static">
+    <div class="container ">
+      <div class="header__container mobile-hide">
+        <a href="/" class="header__logo" title="Velena">
+          <img src="./../img/logo.svg" alt="Velena" width="294" height="85">
+        </a>
+        <div class="header__content">
+          <div class="header__row">
+            <nav class="header__nav">
+              <ul>
+                <li class="is-active">
+                  <a href="">Про компанію</a>
+                </li>
+                <li>
+                  <a href="">Публікації</a>
+                </li>
+                <li>
+                  <a href="">Оплата і доставка</a>
+                </li>
+                <li>
+                  <a href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__btns">
+              <div class="header__btn dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                  <defs>
+                    <clipPath id="clip-path-1">
+                      <rect width="20" height="20" transform="translate(983 -296)" fill="#fff"/>
+                    </clipPath>
+                  </defs>
+                  <g transform="translate(-983 296)" clip-path="url(#clip-path-1)">
+                    <path d="M7.445,9.559l-.433-.9a1,1,0,0,0-.529,1.176Zm-3.891,0,.962.275a1,1,0,0,0-.529-1.176ZM2,15l-.962-.275A1,1,0,0,0,2,16Zm7,0v1a1,1,0,0,0,.962-1.275ZM7.878,10.46A5.5,5.5,0,0,0,11,5.5H9A3.5,3.5,0,0,1,7.013,8.657ZM11,5.5A5.5,5.5,0,0,0,5.5,0V2A3.5,3.5,0,0,1,9,5.5ZM5.5,0A5.5,5.5,0,0,0,0,5.5H2A3.5,3.5,0,0,1,5.5,2ZM0,5.5a5.5,5.5,0,0,0,3.122,4.96l.866-1.8A3.5,3.5,0,0,1,2,5.5Zm2.962,9.775L4.516,9.834,2.593,9.284,1.038,14.725ZM9,14H2v2H9ZM6.484,9.834l1.555,5.441,1.923-.549L8.407,9.284Z" transform="translate(987.5 -294)" class="hover-fill" fill="#4f4f4f"/>
+                  </g>
+                </svg>
+                <span>Вхід</span>
+                <ul>
+                  <li><a href="">Налаштування акаунту</a></li>
+                  <li><a href="">Історія замовлень</a></li>
+                  <li class="separated"><a href="">Вихід</a></li>
+                </ul>
+              </div>
+              <div class="header__btn dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                  <defs>
+                    <clipPath id="clip-path-2">
+                      <rect width="20" height="20" transform="translate(901 -276)" fill="#fff"/>
+                    </clipPath>
+                  </defs>
+                  <g transform="translate(-901 276)" clip-path="url(#clip-path-2)">
+                    <g transform="translate(902.589 -274.641)">
+                      <path d="M8.661,15.617a7.123,7.123,0,0,0,7.25-6.988,7.123,7.123,0,0,0-7.25-6.988,7.123,7.123,0,0,0-7.25,6.988A7.123,7.123,0,0,0,8.661,15.617Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="2"/>
+                      <path d="M10.016,6.5c.221-1.471,2.047-.845,4.02-1.614L15,6.5V9.058l-.5,2.526-1.308,2.238c1.4-3.076-.93-1.72-1.719-4.019C11.035,8.528,9.651,8.928,10.016,6.5Z" class="hover-fill" fill="#4f4f4f"/>
+                      <path d="M5.583,11.584c-.221-1.471-1.17-.457-3.083-1.031v.5l1,1.993,1.749,1.308L7,15.036C7.438,13.762,5.947,14.012,5.583,11.584Z" class="hover-fill" fill="#4f4f4f"/>
+                      <path d="M5.249,6.014c.716-1.279,2.763-2.073,1.063-3.433L4,4.076,2.5,6.5,2,8.435C2.438,7.16,4.125,8.021,5.249,6.014Z" class="hover-fill" fill="#4f4f4f"/>
+                      <path d="M10.016,6.5c.221-1.471,2.047-.845,4.02-1.614L15,6.5V9.058l-.5,2.526-1.308,2.238c1.4-3.076-.93-1.72-1.719-4.019C11.035,8.528,9.651,8.928,10.016,6.5Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="1"/>
+                      <path d="M5.583,11.584c-.221-1.471-1.17-.457-3.083-1.031v.5l1,1.993,1.749,1.308L7,15.036C7.438,13.762,5.947,14.012,5.583,11.584Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="1"/>
+                      <path d="M5.249,6.014c.716-1.279,2.763-2.073,1.063-3.433L4,4.076,2.5,6.5,2,8.435C2.438,7.16,4.125,8.021,5.249,6.014Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="1"/>
+                    </g>
+                  </g>
+                </svg>
+                <span>UA</span>
+                <ul>
+                  <li><a href="" class="is-active">Українська</a></li>
+                  <li><a href="">English</a></li>
+                  <li><a href="">Polska</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__row">
+            <div class="header__btns header__btns--big">
+              <button type="button" class="header__btn header-catalog-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                  <defs>
+                    <clipPath id="clip-path-3">
+                      <rect width="30" height="30" transform="translate(924 -182)" fill="#fff"/>
+                    </clipPath>
+                    <clipPath id="clip-path-4">
+                      <rect width="15" height="15" transform="translate(0 1)" fill="#fff"/>
+                    </clipPath>
+                  </defs>
+                  <g transform="translate(-924 182)" clip-path="url(#clip-path-3)">
+                    <g transform="translate(931.5 -175)" clip-path="url(#clip-path-4)">
+                      <rect width="4" height="4" transform="translate(1 2)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"/>
+                      <rect width="4" height="4" transform="translate(1 11)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"/>
+                      <rect width="4" height="4" transform="translate(10 2)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"/>
+                      <rect width="4" height="4" transform="translate(10 11)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"/>
+                    </g>
+                  </g>
+                </svg>
+                <span>Каталог продукції</span>
+              </button>
+            </div>
+            <div class="header__btns header__btns--big">
+              <div class="header__search">
+                <form class="header__search-form">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                    <defs>
+                      <clipPath id="clip-path-5">
+                        <rect width="30" height="30" transform="translate(944 -278)" fill="#fff"></rect>
+                      </clipPath>
+                    </defs>
+                    <g transform="translate(-944 278)" clip-path="url(#clip-path-5)">
+                      <path d="M16.222,14.8a1,1,0,1,0-1.415,1.413ZM1,9.5H1ZM9.5,1V1Zm3.138,4.23-.77-.638-1.276,1.54.77.638ZM13,10v1h2V10Zm7.708,9.294L16.222,14.8l-1.415,1.413,4.486,4.494ZM17,9.5a7.5,7.5,0,0,1-2.2,5.3l1.414,1.414A9.5,9.5,0,0,0,19,9.5Zm-2.2,5.3A7.5,7.5,0,0,1,9.5,17v2a9.5,9.5,0,0,0,6.718-2.782ZM9.5,17a7.5,7.5,0,0,1-5.3-2.2L2.782,16.218A9.5,9.5,0,0,0,9.5,19ZM4.2,14.8A7.5,7.5,0,0,1,2,9.5H0a9.5,9.5,0,0,0,2.782,6.718ZM2,9.5A7.5,7.5,0,0,1,4.2,4.2L2.782,2.782A9.5,9.5,0,0,0,0,9.5ZM4.2,4.2A7.5,7.5,0,0,1,9.5,2V0A9.5,9.5,0,0,0,2.782,2.782ZM9.5,2a7.5,7.5,0,0,1,5.3,2.2l1.414-1.414A9.5,9.5,0,0,0,9.5,0Zm5.3,2.2A7.5,7.5,0,0,1,17,9.5h2a9.5,9.5,0,0,0-2.782-6.718ZM11.362,6.77A4.218,4.218,0,0,1,13,10h2a6.214,6.214,0,0,0-2.362-4.77Z" transform="translate(949 -273)" class="hover-fill" fill="#333"></path>
+                    </g>
+                  </svg>
+                  <input type="text" name="search" placeholder="Шукати..." required>
+                  <button type="submit" class="btn btn--small">Шукати</button>
+                  <div class="header__search-list"><ul></ul></div>
+                </form>
+                <button type="button" class="header__search-btn header__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                    <defs>
+                      <clipPath id="clip-path-5">
+                        <rect width="30" height="30" transform="translate(944 -278)" fill="#fff"/>
+                      </clipPath>
+                    </defs>
+                    <g transform="translate(-944 278)" clip-path="url(#clip-path-5)">
+                      <path d="M16.222,14.8a1,1,0,1,0-1.415,1.413ZM1,9.5H1ZM9.5,1V1Zm3.138,4.23-.77-.638-1.276,1.54.77.638ZM13,10v1h2V10Zm7.708,9.294L16.222,14.8l-1.415,1.413,4.486,4.494ZM17,9.5a7.5,7.5,0,0,1-2.2,5.3l1.414,1.414A9.5,9.5,0,0,0,19,9.5Zm-2.2,5.3A7.5,7.5,0,0,1,9.5,17v2a9.5,9.5,0,0,0,6.718-2.782ZM9.5,17a7.5,7.5,0,0,1-5.3-2.2L2.782,16.218A9.5,9.5,0,0,0,9.5,19ZM4.2,14.8A7.5,7.5,0,0,1,2,9.5H0a9.5,9.5,0,0,0,2.782,6.718ZM2,9.5A7.5,7.5,0,0,1,4.2,4.2L2.782,2.782A9.5,9.5,0,0,0,0,9.5ZM4.2,4.2A7.5,7.5,0,0,1,9.5,2V0A9.5,9.5,0,0,0,2.782,2.782ZM9.5,2a7.5,7.5,0,0,1,5.3,2.2l1.414-1.414A9.5,9.5,0,0,0,9.5,0Zm5.3,2.2A7.5,7.5,0,0,1,17,9.5h2a9.5,9.5,0,0,0-2.782-6.718ZM11.362,6.77A4.218,4.218,0,0,1,13,10h2a6.214,6.214,0,0,0-2.362-4.77Z" transform="translate(949 -273)" class="hover-fill" fill="#333"/>
+                    </g>
+                  </svg>
+                  <span>Пошук</span>
+                </button>
+              </div>
+              <a href="" class="header__btn ">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                  <defs>
+                    <clipPath id="clip-path-6">
+                      <rect width="30" height="30" transform="translate(868 -278)" fill="#fff" opacity="0.997"/>
+                    </clipPath>
+                  </defs>
+                  <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-868 278)" clip-path="url(#clip-path-6)">
+                    <path d="M12,1.5l2.47,7.6h7.992L16,13.8l2.47,7.6L12,16.7,5.534,21.4,8,13.8,1.538,9.1H9.53Z" transform="translate(871.462 -274)" fill="none" class="hover-stroke" stroke="#333" stroke-linejoin="round" stroke-width="2"/>
+                  </g>
+                </svg>
+              </a>
+              <a href="" class="header__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                  <defs>
+                    <clipPath id="clip-path-7">
+                      <rect width="30" height="30" transform="translate(815 -278)" fill="#fff"/>
+                    </clipPath>
+                  </defs>
+                  <g transform="translate(-815 278)" clip-path="url(#clip-path-7)">
+                    <g id="Frame_326" data-name="Frame 326" transform="translate(820 -274)">
+                      <path d="M0,2H3L5.5,15h13M4,3H20.5l-2,8H5.5" fill="none" stroke="#333" class="hover-stroke" stroke-linejoin="round" stroke-width="2"/>
+                      <circle cx="1" cy="1" r="1" transform="translate(5 18)" fill="none" stroke="#333" class="hover-stroke" stroke-width="2"/>
+                      <circle cx="1" cy="1" r="1" transform="translate(17 18)" fill="none" stroke="#333" class="hover-stroke" stroke-width="2"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile mobile-show">
+        <button class="burger" type="button">
+          <img src="./../img/burger-open.svg" alt="burger-open">
+          <img src="./../img/burger-close.svg" alt="burger-open">
+        </button>
+        <a href="/" class="header-mobile__logo" title="Velena">
+          <img src="./../img/logo.svg" alt="Velena" width="294" height="85">
+        </a>
+        <div class="header__btns">
+          <div class="header__btn header-mobile__search">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+              <defs>
+                <clipPath id="clip-path-5">
+                  <rect width="30" height="30" transform="translate(944 -278)" fill="#fff"/>
+                </clipPath>
+              </defs>
+              <g transform="translate(-944 278)" clip-path="url(#clip-path-5)">
+                <path d="M16.222,14.8a1,1,0,1,0-1.415,1.413ZM1,9.5H1ZM9.5,1V1Zm3.138,4.23-.77-.638-1.276,1.54.77.638ZM13,10v1h2V10Zm7.708,9.294L16.222,14.8l-1.415,1.413,4.486,4.494ZM17,9.5a7.5,7.5,0,0,1-2.2,5.3l1.414,1.414A9.5,9.5,0,0,0,19,9.5Zm-2.2,5.3A7.5,7.5,0,0,1,9.5,17v2a9.5,9.5,0,0,0,6.718-2.782ZM9.5,17a7.5,7.5,0,0,1-5.3-2.2L2.782,16.218A9.5,9.5,0,0,0,9.5,19ZM4.2,14.8A7.5,7.5,0,0,1,2,9.5H0a9.5,9.5,0,0,0,2.782,6.718ZM2,9.5A7.5,7.5,0,0,1,4.2,4.2L2.782,2.782A9.5,9.5,0,0,0,0,9.5ZM4.2,4.2A7.5,7.5,0,0,1,9.5,2V0A9.5,9.5,0,0,0,2.782,2.782ZM9.5,2a7.5,7.5,0,0,1,5.3,2.2l1.414-1.414A9.5,9.5,0,0,0,9.5,0Zm5.3,2.2A7.5,7.5,0,0,1,17,9.5h2a9.5,9.5,0,0,0-2.782-6.718ZM11.362,6.77A4.218,4.218,0,0,1,13,10h2a6.214,6.214,0,0,0-2.362-4.77Z" transform="translate(949 -273)" class="hover-fill" fill="#333"/>
+              </g>
+            </svg>
+          </div>
+          <a href="" class="header__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+              <defs>
+                <clipPath id="clip-path-7">
+                  <rect width="30" height="30" transform="translate(815 -278)" fill="#fff"/>
+                </clipPath>
+              </defs>
+              <g transform="translate(-815 278)" clip-path="url(#clip-path-7)">
+                <g id="Frame_326" data-name="Frame 326" transform="translate(820 -274)">
+                  <path d="M0,2H3L5.5,15h13M4,3H20.5l-2,8H5.5" fill="none" stroke="#333" class="hover-stroke" stroke-linejoin="round" stroke-width="2"/>
+                  <circle cx="1" cy="1" r="1" transform="translate(5 18)" fill="none" stroke="#333" class="hover-stroke" stroke-width="2"/>
+                  <circle cx="1" cy="1" r="1" transform="translate(17 18)" fill="none" stroke="#333" class="hover-stroke" stroke-width="2"/>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__fixed">
+    <div class="container ">
+      <div class="header__container mobile-hide">
+        <a href="/" class="header__logo" title="Velena">
+          <img src="./../img/logo-small.svg" alt="Velena" width="294" height="85">
+        </a>
+        <div class="header__content">
+          <div class="header__row">
+            <nav class="header__nav">
+              <ul>
+                <li class="is-active">
+                  <a href="">Про компанію</a>
+                </li>
+                <li>
+                  <a href="">Публікації</a>
+                </li>
+                <li>
+                  <a href="">Оплата і доставка</a>
+                </li>
+                <li>
+                  <a href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__btns">
+              <div class="header__btn dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                  <defs>
+                    <clipPath id="clip-path-1">
+                      <rect width="20" height="20" transform="translate(983 -296)" fill="#fff"/>
+                    </clipPath>
+                  </defs>
+                  <g transform="translate(-983 296)" clip-path="url(#clip-path-1)">
+                    <path d="M7.445,9.559l-.433-.9a1,1,0,0,0-.529,1.176Zm-3.891,0,.962.275a1,1,0,0,0-.529-1.176ZM2,15l-.962-.275A1,1,0,0,0,2,16Zm7,0v1a1,1,0,0,0,.962-1.275ZM7.878,10.46A5.5,5.5,0,0,0,11,5.5H9A3.5,3.5,0,0,1,7.013,8.657ZM11,5.5A5.5,5.5,0,0,0,5.5,0V2A3.5,3.5,0,0,1,9,5.5ZM5.5,0A5.5,5.5,0,0,0,0,5.5H2A3.5,3.5,0,0,1,5.5,2ZM0,5.5a5.5,5.5,0,0,0,3.122,4.96l.866-1.8A3.5,3.5,0,0,1,2,5.5Zm2.962,9.775L4.516,9.834,2.593,9.284,1.038,14.725ZM9,14H2v2H9ZM6.484,9.834l1.555,5.441,1.923-.549L8.407,9.284Z" transform="translate(987.5 -294)" class="hover-fill" fill="#4f4f4f"/>
+                  </g>
+                </svg>
+                <span>Вхід</span>
+                <ul>
+                  <li><a href="">Налаштування акаунту</a></li>
+                  <li><a href="">Історія замовлень</a></li>
+                  <li class="separated"><a href="">Вихід</a></li>
+                </ul>
+              </div>
+              <div class="header__btn dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                  <defs>
+                    <clipPath id="clip-path-2">
+                      <rect width="20" height="20" transform="translate(901 -276)" fill="#fff"/>
+                    </clipPath>
+                  </defs>
+                  <g transform="translate(-901 276)" clip-path="url(#clip-path-2)">
+                    <g transform="translate(902.589 -274.641)">
+                      <path d="M8.661,15.617a7.123,7.123,0,0,0,7.25-6.988,7.123,7.123,0,0,0-7.25-6.988,7.123,7.123,0,0,0-7.25,6.988A7.123,7.123,0,0,0,8.661,15.617Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="2"/>
+                      <path d="M10.016,6.5c.221-1.471,2.047-.845,4.02-1.614L15,6.5V9.058l-.5,2.526-1.308,2.238c1.4-3.076-.93-1.72-1.719-4.019C11.035,8.528,9.651,8.928,10.016,6.5Z" class="hover-fill" fill="#4f4f4f"/>
+                      <path d="M5.583,11.584c-.221-1.471-1.17-.457-3.083-1.031v.5l1,1.993,1.749,1.308L7,15.036C7.438,13.762,5.947,14.012,5.583,11.584Z" class="hover-fill" fill="#4f4f4f"/>
+                      <path d="M5.249,6.014c.716-1.279,2.763-2.073,1.063-3.433L4,4.076,2.5,6.5,2,8.435C2.438,7.16,4.125,8.021,5.249,6.014Z" class="hover-fill" fill="#4f4f4f"/>
+                      <path d="M10.016,6.5c.221-1.471,2.047-.845,4.02-1.614L15,6.5V9.058l-.5,2.526-1.308,2.238c1.4-3.076-.93-1.72-1.719-4.019C11.035,8.528,9.651,8.928,10.016,6.5Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="1"/>
+                      <path d="M5.583,11.584c-.221-1.471-1.17-.457-3.083-1.031v.5l1,1.993,1.749,1.308L7,15.036C7.438,13.762,5.947,14.012,5.583,11.584Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="1"/>
+                      <path d="M5.249,6.014c.716-1.279,2.763-2.073,1.063-3.433L4,4.076,2.5,6.5,2,8.435C2.438,7.16,4.125,8.021,5.249,6.014Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="1"/>
+                    </g>
+                  </g>
+                </svg>
+                <span>UA</span>
+                <ul>
+                  <li><a href="" class="is-active">Українська</a></li>
+                  <li><a href="">English</a></li>
+                  <li><a href="">Polska</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__row">
+            <div class="header__btns header__btns--big">
+              <button type="button" class="header__btn header-catalog-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                  <defs>
+                    <clipPath id="clip-path-3">
+                      <rect width="30" height="30" transform="translate(924 -182)" fill="#fff"/>
+                    </clipPath>
+                    <clipPath id="clip-path-4">
+                      <rect width="15" height="15" transform="translate(0 1)" fill="#fff"/>
+                    </clipPath>
+                  </defs>
+                  <g transform="translate(-924 182)" clip-path="url(#clip-path-3)">
+                    <g transform="translate(931.5 -175)" clip-path="url(#clip-path-4)">
+                      <rect width="4" height="4" transform="translate(1 2)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"/>
+                      <rect width="4" height="4" transform="translate(1 11)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"/>
+                      <rect width="4" height="4" transform="translate(10 2)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"/>
+                      <rect width="4" height="4" transform="translate(10 11)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"/>
+                    </g>
+                  </g>
+                </svg>
+                <span>Каталог продукції</span>
+              </button>
+            </div>
+            <div class="header__btns header__btns--big">
+              <div class="header__search">
+                <form class="header__search-form">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                    <defs>
+                      <clipPath id="clip-path-5">
+                        <rect width="30" height="30" transform="translate(944 -278)" fill="#fff"></rect>
+                      </clipPath>
+                    </defs>
+                    <g transform="translate(-944 278)" clip-path="url(#clip-path-5)">
+                      <path d="M16.222,14.8a1,1,0,1,0-1.415,1.413ZM1,9.5H1ZM9.5,1V1Zm3.138,4.23-.77-.638-1.276,1.54.77.638ZM13,10v1h2V10Zm7.708,9.294L16.222,14.8l-1.415,1.413,4.486,4.494ZM17,9.5a7.5,7.5,0,0,1-2.2,5.3l1.414,1.414A9.5,9.5,0,0,0,19,9.5Zm-2.2,5.3A7.5,7.5,0,0,1,9.5,17v2a9.5,9.5,0,0,0,6.718-2.782ZM9.5,17a7.5,7.5,0,0,1-5.3-2.2L2.782,16.218A9.5,9.5,0,0,0,9.5,19ZM4.2,14.8A7.5,7.5,0,0,1,2,9.5H0a9.5,9.5,0,0,0,2.782,6.718ZM2,9.5A7.5,7.5,0,0,1,4.2,4.2L2.782,2.782A9.5,9.5,0,0,0,0,9.5ZM4.2,4.2A7.5,7.5,0,0,1,9.5,2V0A9.5,9.5,0,0,0,2.782,2.782ZM9.5,2a7.5,7.5,0,0,1,5.3,2.2l1.414-1.414A9.5,9.5,0,0,0,9.5,0Zm5.3,2.2A7.5,7.5,0,0,1,17,9.5h2a9.5,9.5,0,0,0-2.782-6.718ZM11.362,6.77A4.218,4.218,0,0,1,13,10h2a6.214,6.214,0,0,0-2.362-4.77Z" transform="translate(949 -273)" class="hover-fill" fill="#333"></path>
+                    </g>
+                  </svg>
+                  <input type="text" name="search" placeholder="Шукати..." required>
+                  <button type="submit" class="btn btn--small">Шукати</button>
+
+                  <div class="header__search-list"><ul></ul></div>
+                </form>
+                <button type="button" class="header__search-btn header__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                    <defs>
+                      <clipPath id="clip-path-5">
+                        <rect width="30" height="30" transform="translate(944 -278)" fill="#fff"/>
+                      </clipPath>
+                    </defs>
+                    <g transform="translate(-944 278)" clip-path="url(#clip-path-5)">
+                      <path d="M16.222,14.8a1,1,0,1,0-1.415,1.413ZM1,9.5H1ZM9.5,1V1Zm3.138,4.23-.77-.638-1.276,1.54.77.638ZM13,10v1h2V10Zm7.708,9.294L16.222,14.8l-1.415,1.413,4.486,4.494ZM17,9.5a7.5,7.5,0,0,1-2.2,5.3l1.414,1.414A9.5,9.5,0,0,0,19,9.5Zm-2.2,5.3A7.5,7.5,0,0,1,9.5,17v2a9.5,9.5,0,0,0,6.718-2.782ZM9.5,17a7.5,7.5,0,0,1-5.3-2.2L2.782,16.218A9.5,9.5,0,0,0,9.5,19ZM4.2,14.8A7.5,7.5,0,0,1,2,9.5H0a9.5,9.5,0,0,0,2.782,6.718ZM2,9.5A7.5,7.5,0,0,1,4.2,4.2L2.782,2.782A9.5,9.5,0,0,0,0,9.5ZM4.2,4.2A7.5,7.5,0,0,1,9.5,2V0A9.5,9.5,0,0,0,2.782,2.782ZM9.5,2a7.5,7.5,0,0,1,5.3,2.2l1.414-1.414A9.5,9.5,0,0,0,9.5,0Zm5.3,2.2A7.5,7.5,0,0,1,17,9.5h2a9.5,9.5,0,0,0-2.782-6.718ZM11.362,6.77A4.218,4.218,0,0,1,13,10h2a6.214,6.214,0,0,0-2.362-4.77Z" transform="translate(949 -273)" class="hover-fill" fill="#333"/>
+                    </g>
+                  </svg>
+                  <span>Пошук</span>
+                </button>
+              </div>
+              <a href="" class="header__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                  <defs>
+                    <clipPath id="clip-path-6">
+                      <rect width="30" height="30" transform="translate(868 -278)" fill="#fff" opacity="0.997"/>
+                    </clipPath>
+                  </defs>
+                  <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-868 278)" clip-path="url(#clip-path-6)">
+                    <path d="M12,1.5l2.47,7.6h7.992L16,13.8l2.47,7.6L12,16.7,5.534,21.4,8,13.8,1.538,9.1H9.53Z" transform="translate(871.462 -274)" fill="none" class="hover-stroke" stroke="#333" stroke-linejoin="round" stroke-width="2"/>
+                  </g>
+                </svg>
+              </a>
+              <a href="" class="header__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                  <defs>
+                    <clipPath id="clip-path-7">
+                      <rect width="30" height="30" transform="translate(815 -278)" fill="#fff"/>
+                    </clipPath>
+                  </defs>
+                  <g transform="translate(-815 278)" clip-path="url(#clip-path-7)">
+                    <g id="Frame_326" data-name="Frame 326" transform="translate(820 -274)">
+                      <path d="M0,2H3L5.5,15h13M4,3H20.5l-2,8H5.5" fill="none" stroke="#333" class="hover-stroke" stroke-linejoin="round" stroke-width="2"/>
+                      <circle cx="1" cy="1" r="1" transform="translate(5 18)" fill="none" stroke="#333" class="hover-stroke" stroke-width="2"/>
+                      <circle cx="1" cy="1" r="1" transform="translate(17 18)" fill="none" stroke="#333" class="hover-stroke" stroke-width="2"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile mobile-show">
+        <button class="burger" type="button">
+          <img src="./../img/burger-open.svg" alt="burger-open">
+          <img src="./../img/burger-close.svg" alt="burger-open">
+        </button>
+        <a href="/" class="header-mobile__logo" title="Velena">
+          <img src="./../img/logo.svg" alt="Velena" width="294" height="85">
+        </a>
+        <div class="header__btns">
+          <div class="header__btn header-mobile__search">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+              <defs>
+                <clipPath id="clip-path-5">
+                  <rect width="30" height="30" transform="translate(944 -278)" fill="#fff"/>
+                </clipPath>
+              </defs>
+              <g transform="translate(-944 278)" clip-path="url(#clip-path-5)">
+                <path d="M16.222,14.8a1,1,0,1,0-1.415,1.413ZM1,9.5H1ZM9.5,1V1Zm3.138,4.23-.77-.638-1.276,1.54.77.638ZM13,10v1h2V10Zm7.708,9.294L16.222,14.8l-1.415,1.413,4.486,4.494ZM17,9.5a7.5,7.5,0,0,1-2.2,5.3l1.414,1.414A9.5,9.5,0,0,0,19,9.5Zm-2.2,5.3A7.5,7.5,0,0,1,9.5,17v2a9.5,9.5,0,0,0,6.718-2.782ZM9.5,17a7.5,7.5,0,0,1-5.3-2.2L2.782,16.218A9.5,9.5,0,0,0,9.5,19ZM4.2,14.8A7.5,7.5,0,0,1,2,9.5H0a9.5,9.5,0,0,0,2.782,6.718ZM2,9.5A7.5,7.5,0,0,1,4.2,4.2L2.782,2.782A9.5,9.5,0,0,0,0,9.5ZM4.2,4.2A7.5,7.5,0,0,1,9.5,2V0A9.5,9.5,0,0,0,2.782,2.782ZM9.5,2a7.5,7.5,0,0,1,5.3,2.2l1.414-1.414A9.5,9.5,0,0,0,9.5,0Zm5.3,2.2A7.5,7.5,0,0,1,17,9.5h2a9.5,9.5,0,0,0-2.782-6.718ZM11.362,6.77A4.218,4.218,0,0,1,13,10h2a6.214,6.214,0,0,0-2.362-4.77Z" transform="translate(949 -273)" class="hover-fill" fill="#333"/>
+              </g>
+            </svg>
+          </div>
+          <a href="" class="header__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+              <defs>
+                <clipPath id="clip-path-7">
+                  <rect width="30" height="30" transform="translate(815 -278)" fill="#fff"/>
+                </clipPath>
+              </defs>
+              <g transform="translate(-815 278)" clip-path="url(#clip-path-7)">
+                <g id="Frame_326" data-name="Frame 326" transform="translate(820 -274)">
+                  <path d="M0,2H3L5.5,15h13M4,3H20.5l-2,8H5.5" fill="none" stroke="#333" class="hover-stroke" stroke-linejoin="round" stroke-width="2"/>
+                  <circle cx="1" cy="1" r="1" transform="translate(5 18)" fill="none" stroke="#333" class="hover-stroke" stroke-width="2"/>
+                  <circle cx="1" cy="1" r="1" transform="translate(17 18)" fill="none" stroke="#333" class="hover-stroke" stroke-width="2"/>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__menu">
+    <div class="container">
+      <div class="header__menu-inner">
+        <div class="header__menu-row">
+          <div class="header__menu-item" data-sub="1">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_1.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Банки скляні</span>
+            </div>
+          </div>
+          <div class="header__menu-item" data-sub="2">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_2.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Пляшки скляні</span>
+            </div>
+          </div>
+          <div class="header__menu-item" data-sub="3">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_3.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Бутлі 5-25л</span>
+            </div>
+          </div>
+          <div class="header__menu-item" data-sub="4">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_4.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Лимонадники</span>
+            </div>
+          </div>
+          <div class="header__menu-item" data-sub="5">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_5.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Кришки</span>
+            </div>
+          </div>
+          <div class="header__menu-item" data-sub="6">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_6.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Гофроящики</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__menu-subs">
+          <div class="header__menu-sub" data-sub="1">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_2.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 28 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_3.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 31,5 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu-sub" data-sub="2">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_2.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 28 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_3.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 31,5 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_2.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 28 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_3.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 31,5 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu-sub" data-sub="3">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu-sub" data-sub="4">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu-sub" data-sub="5">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_2.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 28 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_3.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 31,5 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu-sub" data-sub="6">
+          <div class="header__menu-item">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>вінчик <br> PP 18 mm</span>
+            </div>
+          </div>
+          <div class="header__menu-item">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_sub_2.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>вінчик <br> PP 28 mm</span>
+            </div>
+          </div>
+          <div class="header__menu-item">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_sub_3.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>вінчик <br> PP 31,5 mm</span>
+            </div>
+          </div>
+          <div class="header__menu-item">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>вінчик <br> Twist Off</span>
+            </div>
+          </div>
+          <div class="header__menu-item">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>вінчик <br> Twist Off</span>
+            </div>
+          </div>
+          <div class="header__menu-item">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>вінчик <br> Кронен</span>
+            </div>
+          </div>
+          <div class="header__menu-item">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>вінчик <br> Пробка</span>
+            </div>
+          </div>
+          <div class="header__menu-item">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>вінчик <br> Бугель</span>
+            </div>
+          </div>
+          <div class="header__menu-item">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>вінчик <br> Пробка</span>
+            </div>
+          </div>
+          <div class="header__menu-item">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>вінчик <br> Бугель</span>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="header__menu-use">
+          <div class="header__menu-content">
+            <div class="title-h5">
+              <span>Оберіть продукцію <br> за призначенням</span>
+            </div>
+            <div class="header__menu-text">
+              <p>Не знаєте, яка саме тара підійде для ваших потреб? Оберіть призначення, і ми підберемо найбільш відповідну тару для вас</p>
+            </div>
+          </div>
+          <ul class="header__menu-list">
+            <li><a href="">Пляшки для вина та шампанського </a></li>
+            <li><a href="">Келихи, пляшки для пива</a></li>
+            <li><a href="">Банки для рибної ікри та меду</a></li>
+            <li><a href="">Банки для консервації харчових продуктів</a></li>
+            <li><a href="">Пляшки та бокали для пива</a></li>
+            <li><a href="">Пляшки для соків та води</a></li>
+            <li><a href="">Пляшки для молочних продуктів</a></li>
+            <li><a href="">Пляшки для горілчаних виробів</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="menu mobile-show">
+  <div class="menu__inner">
+    <div class="menu__btns">
+      <button type="button" class="header__btn header-catalog-btn-mob">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+          <defs>
+            <clipPath id="clip-path-3">
+              <rect width="30" height="30" transform="translate(924 -182)" fill="#fff"></rect>
+            </clipPath>
+            <clipPath id="clip-path-4">
+              <rect width="15" height="15" transform="translate(0 1)" fill="#fff"></rect>
+            </clipPath>
+          </defs>
+          <g transform="translate(-924 182)" clip-path="url(#clip-path-3)">
+            <g transform="translate(931.5 -175)" clip-path="url(#clip-path-4)">
+              <rect width="4" height="4" transform="translate(1 2)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"></rect>
+              <rect width="4" height="4" transform="translate(1 11)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"></rect>
+              <rect width="4" height="4" transform="translate(10 2)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"></rect>
+              <rect width="4" height="4" transform="translate(10 11)" fill="none" class="hover-stroke" stroke="#333" stroke-width="2"></rect>
+            </g>
+          </g>
+        </svg>
+        <span>Каталог продукції</span>
+      </button>
+      <div class="header__menu-inner">
+
+        <div class="header__menu-row">
+          <div class="header__menu-item" data-sub="1">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_1.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Банки скляні</span>
+            </div>
+          </div>
+          <div class="header__menu-item" data-sub="2">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_2.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Пляшки скляні</span>
+            </div>
+          </div>
+        </div>
+        <div class="header__menu-subs">
+          <div class="header__menu-sub" data-sub="1">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_2.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 28 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_3.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 31,5 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu-sub" data-sub="2">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_2.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 28 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_3.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 31,5 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_2.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 28 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_3.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 31,5 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__menu-row">
+          <div class="header__menu-item" data-sub="3">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_3.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Бутлі 5-25л</span>
+            </div>
+          </div>
+          <div class="header__menu-item" data-sub="4">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_4.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Лимонадники</span>
+            </div>
+          </div>
+        </div>
+        <div class="header__menu-subs">
+          <div class="header__menu-sub" data-sub="3">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu-sub" data-sub="4">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__menu-row">
+          <div class="header__menu-item" data-sub="5">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_5.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Кришки</span>
+            </div>
+          </div>
+          <div class="header__menu-item" data-sub="6">
+            <div class="header__menu-item__img">
+              <img src="./../img/header-menu_6.png" alt="Item 1">
+            </div>
+            <div class="header__menu-item__title">
+              <span>Гофроящики</span>
+            </div>
+          </div>
+        </div>
+        <div class="header__menu-subs">
+          <div class="header__menu-sub" data-sub="5">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_2.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 28 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_3.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 31,5 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu-sub" data-sub="6">
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_1.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 18 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_2.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 28 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_3.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> PP 31,5 mm</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_4.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Twist Off</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_5.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Кронен</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_6.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Пробка</span>
+              </div>
+            </div>
+            <div class="header__menu-item">
+              <div class="header__menu-item__img">
+                <img src="./../img/header-menu_sub_7.png" alt="Item 1">
+              </div>
+              <div class="header__menu-item__title">
+                <span>вінчик <br> Бугель</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__menu-use">
+          <div class="header__menu-content">
+            <div class="title-h5">
+              <span>Оберіть продукцію <br> за призначенням</span>
+            </div>
+            <div class="header__menu-text">
+              <p>Не знаєте, яка саме тара підійде для ваших потреб? Оберіть призначення, і ми підберемо найбільш відповідну тару для вас</p>
+            </div>
+          </div>
+          <ul class="header__menu-list">
+            <li><a href="">Пляшки для вина та шампанського </a></li>
+            <li><a href="">Келихи, пляшки для пива</a></li>
+            <li><a href="">Банки для рибної ікри та меду</a></li>
+            <li><a href="">Банки для консервації харчових продуктів</a></li>
+            <li><a href="">Пляшки та бокали для пива</a></li>
+            <li><a href="">Пляшки для соків та води</a></li>
+            <li><a href="">Пляшки для молочних продуктів</a></li>
+            <li><a href="">Пляшки для горілчаних виробів</a></li>
+          </ul>
+          <div class="section-arrow">
+            <span class="open-text">Обрати призначення</span>
+            <span class="close-text">Згорнути</span>
+            <img src="./../img/ico-more-arrow.svg" alt="^">
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="menu__nav header__nav">
+      <ul>
+        <li>
+          <a href="" class="header__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+              <defs>
+                <clipPath id="clip-path-1">
+                  <rect width="20" height="20" transform="translate(983 -296)" fill="#fff"></rect>
+                </clipPath>
+              </defs>
+              <g transform="translate(-983 296)" clip-path="url(#clip-path-1)">
+                <path d="M7.445,9.559l-.433-.9a1,1,0,0,0-.529,1.176Zm-3.891,0,.962.275a1,1,0,0,0-.529-1.176ZM2,15l-.962-.275A1,1,0,0,0,2,16Zm7,0v1a1,1,0,0,0,.962-1.275ZM7.878,10.46A5.5,5.5,0,0,0,11,5.5H9A3.5,3.5,0,0,1,7.013,8.657ZM11,5.5A5.5,5.5,0,0,0,5.5,0V2A3.5,3.5,0,0,1,9,5.5ZM5.5,0A5.5,5.5,0,0,0,0,5.5H2A3.5,3.5,0,0,1,5.5,2ZM0,5.5a5.5,5.5,0,0,0,3.122,4.96l.866-1.8A3.5,3.5,0,0,1,2,5.5Zm2.962,9.775L4.516,9.834,2.593,9.284,1.038,14.725ZM9,14H2v2H9ZM6.484,9.834l1.555,5.441,1.923-.549L8.407,9.284Z" transform="translate(987.5 -294)" class="hover-fill" fill="#4f4f4f"></path>
+              </g>
+            </svg>
+            <span>Вхід</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="header__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+              <defs>
+                <clipPath id="clip-path-6">
+                  <rect width="30" height="30" transform="translate(868 -278)" fill="#fff" opacity="0.997"></rect>
+                </clipPath>
+              </defs>
+              <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-868 278)" clip-path="url(#clip-path-6)">
+                <path d="M12,1.5l2.47,7.6h7.992L16,13.8l2.47,7.6L12,16.7,5.534,21.4,8,13.8,1.538,9.1H9.53Z" transform="translate(871.462 -274)" fill="none" class="hover-stroke" stroke="#333" stroke-linejoin="round" stroke-width="2"></path>
+              </g>
+            </svg>
+            <span>Обрані товари</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="menu__nav header__nav">
+      <ul>
+        <li>
+          <a href=""><span>Про компанію</span></a>
+        </li>
+        <li>
+          <a href=""><span>Публікації</span></a>
+        </li>
+        <li>
+          <a href=""><span>Оплата і доставка</span></a>
+        </li>
+        <li>
+          <a href=""><span>Контакти</span></a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="menu__nav menu__nav--small header__nav">
+      <ul>
+        <li>
+          <a href="" class="header__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+              <defs>
+                <clipPath id="clip-path-2">
+                  <rect width="20" height="20" transform="translate(901 -276)" fill="#fff"></rect>
+                </clipPath>
+              </defs>
+              <g transform="translate(-901 276)" clip-path="url(#clip-path-2)">
+                <g transform="translate(902.589 -274.641)">
+                  <path d="M8.661,15.617a7.123,7.123,0,0,0,7.25-6.988,7.123,7.123,0,0,0-7.25-6.988,7.123,7.123,0,0,0-7.25,6.988A7.123,7.123,0,0,0,8.661,15.617Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="2"></path>
+                  <path d="M10.016,6.5c.221-1.471,2.047-.845,4.02-1.614L15,6.5V9.058l-.5,2.526-1.308,2.238c1.4-3.076-.93-1.72-1.719-4.019C11.035,8.528,9.651,8.928,10.016,6.5Z" class="hover-fill" fill="#4f4f4f"></path>
+                  <path d="M5.583,11.584c-.221-1.471-1.17-.457-3.083-1.031v.5l1,1.993,1.749,1.308L7,15.036C7.438,13.762,5.947,14.012,5.583,11.584Z" class="hover-fill" fill="#4f4f4f"></path>
+                  <path d="M5.249,6.014c.716-1.279,2.763-2.073,1.063-3.433L4,4.076,2.5,6.5,2,8.435C2.438,7.16,4.125,8.021,5.249,6.014Z" class="hover-fill" fill="#4f4f4f"></path>
+                  <path d="M10.016,6.5c.221-1.471,2.047-.845,4.02-1.614L15,6.5V9.058l-.5,2.526-1.308,2.238c1.4-3.076-.93-1.72-1.719-4.019C11.035,8.528,9.651,8.928,10.016,6.5Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="1"></path>
+                  <path d="M5.583,11.584c-.221-1.471-1.17-.457-3.083-1.031v.5l1,1.993,1.749,1.308L7,15.036C7.438,13.762,5.947,14.012,5.583,11.584Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="1"></path>
+                  <path d="M5.249,6.014c.716-1.279,2.763-2.073,1.063-3.433L4,4.076,2.5,6.5,2,8.435C2.438,7.16,4.125,8.021,5.249,6.014Z" fill="none" class="hover-stroke" stroke="#4f4f4f" stroke-width="1"></path>
+                </g>
+              </g>
+            </svg>
+            <span>Мова сайту</span>
+          </a>
+        </li>
+        <li class="is-small">
+          <a href=""><span>Українська</span></a>
+        </li>
+        <li class="is-small">
+          <a href=""><span>English</span></a>
+        </li>
+        <li class="is-small">
+          <a href=""><span>Polska</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <main class="main">
+
+        <section class="search-results">
+            <div class="container">
+                <div class="search-results__title title-h1">
+                    <h1>Результати пошуку «green»</h1>
+                </div>
+                <div class="search-results__container">
+                    <div class="search-results__head">
+                        <div class="search-results__text">У списку <strong>536</strong> товари</div>
+                        <div class="dropdown dropdown-click">
+                            <img src="./img/ico-sort-dropdown-1.svg" alt="img-sort">
+                            <span>За датою додавання</span>
+                            <ul>
+                            <li><a href="">За датою додавання</a></li>
+                            <li><a href="">За датою додавання</a></li>
+                            <li><a href="">За датою додавання</a></li>
+                            </ul>
+                            <img src="./img/ico-sort-dropdown-2.svg" alt="img-sort">
+                        </div>
+                    </div>
+                    <div class="search-results__cards">
+                        <article class="product-card" data-product-id="123" style="z-index: 999;">
+                            <div class="product-card__top">
+                              <div class="product-card__tags">
+                                <span class="tag">Акція</span>
+                              </div>
+                              <a href="" class="product-card__favorite is-added" title="Додати до вибраних" alt="Додати до вибраних">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M13.5 1L16.2038 8.77852L24.4371 8.9463L17.8749 13.9215L20.2595 21.8037L13.5 17.1L6.74047 21.8037L9.12514 13.9215L2.56285 8.9463L10.7962 8.77852L13.5 1Z" stroke="#333333" stroke-linejoin="round"/>
+                                  <rect class="cross-line" x="1.23438" y="20.458" width="29" height="1" transform="rotate(-38.0739 1.23438 20.458)" fill="#333333"/>
+                                  <rect class="cross-line" y="18.8838" width="29" height="2" transform="rotate(-38.0739 0 18.8838)" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                            <a href="" class="product-card__link">
+                                <div class="product-card__img">
+                                    <img src="./../img/product-card-img-1.png" alt="vine">
+                                </div>
+                              <div class="product-card__info">
+                                  <div class="product-card__title">
+                                      <h3>Скляна пляшка Dorato<br>750ml</h3>
+                                  </div>
+                                  <div class="product-card__about">
+                                    <ul class="product-card__spec">
+                                      <li>
+                                        <img src="./img/ico-product-card_1.svg" alt="ico-card-img">
+                                        <span>200 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_2.svg" alt="ico-card-img">
+                                        <span>75 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_3.svg" alt="ico-card-img">
+                                        <span>640 г</span>
+                                      </li>
+                                    </ul>
+                                    <div class="product-card__content">
+                                      <div class="product-card__price">
+                                        <div class="product-card__price--old">
+                                          <span>31.53 ₴</span>
+                                        </div>
+                                        <div class="product-card__price--new">
+                                          <span>312.53 ₴</span>
+                                        </div>
+                                      </div>
+                                      <div class="product-card__package">
+                                        <p>231 шт. × 31.53 ₴ <br>в упаковці</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </a>
+                            <div class="product-card__buttons">
+                              <div class="product-card__row">
+                                <button class="btn btn--medium">У кошик</button>
+                                <div class="product-card__quantity quantity">
+                                  <button type="button" class="quantity__btn" data-direction="minus">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect y="4" width="4" height="14" transform="rotate(-90 0 4)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                  <input class="quantity__input" type="text" min="1" max="" value="1" readonly="" name="Quantity">
+                                  <button type="button" class="quantity__btn" data-direction="plus">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect x="5" width="4" height="14" fill="#E0E0E0"></rect>
+                                      <rect y="9" width="4" height="14" transform="rotate(-90 0 9)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <a href="" class="section-link">Замовити оптову кількість</a>
+                            </div>
+                        </article>
+                        <article class="product-card" data-product-id="123" style="z-index: 999;">
+                            <div class="product-card__top">
+                              <div class="product-card__tags">
+                                <span class="tag">Акція</span>
+                              </div>
+                              <a href="" class="product-card__favorite is-added" title="Додати до вибраних" alt="Додати до вибраних">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M13.5 1L16.2038 8.77852L24.4371 8.9463L17.8749 13.9215L20.2595 21.8037L13.5 17.1L6.74047 21.8037L9.12514 13.9215L2.56285 8.9463L10.7962 8.77852L13.5 1Z" stroke="#333333" stroke-linejoin="round"/>
+                                  <rect class="cross-line" x="1.23438" y="20.458" width="29" height="1" transform="rotate(-38.0739 1.23438 20.458)" fill="#333333"/>
+                                  <rect class="cross-line" y="18.8838" width="29" height="2" transform="rotate(-38.0739 0 18.8838)" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                            <a href="" class="product-card__link">
+                                <div class="product-card__img">
+                                    <img src="./../img/product-card-img-1.png" alt="vine">
+                                </div>
+                              <div class="product-card__info">
+                                  <div class="product-card__title">
+                                      <h3>Скляна пляшка Dorato<br>750ml</h3>
+                                  </div>
+                                  <div class="product-card__about">
+                                    <ul class="product-card__spec">
+                                      <li>
+                                        <img src="./img/ico-product-card_1.svg" alt="ico-card-img">
+                                        <span>200 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_2.svg" alt="ico-card-img">
+                                        <span>75 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_3.svg" alt="ico-card-img">
+                                        <span>640 г</span>
+                                      </li>
+                                    </ul>
+                                    <div class="product-card__content">
+                                      <div class="product-card__price">
+                                        <div class="product-card__price--old">
+                                          <span>31.53 ₴</span>
+                                        </div>
+                                        <div class="product-card__price--new">
+                                          <span>312.53 ₴</span>
+                                        </div>
+                                      </div>
+                                      <div class="product-card__package">
+                                        <p>231 шт. × 31.53 ₴ <br>в упаковці</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </a>
+                            <div class="product-card__buttons">
+                              <div class="product-card__row">
+                                <button class="btn btn--medium">У кошик</button>
+                                <div class="product-card__quantity quantity">
+                                  <button type="button" class="quantity__btn" data-direction="minus">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect y="4" width="4" height="14" transform="rotate(-90 0 4)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                  <input class="quantity__input" type="text" min="1" max="" value="1" readonly="" name="Quantity">
+                                  <button type="button" class="quantity__btn" data-direction="plus">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect x="5" width="4" height="14" fill="#E0E0E0"></rect>
+                                      <rect y="9" width="4" height="14" transform="rotate(-90 0 9)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <a href="" class="section-link">Замовити оптову кількість</a>
+                            </div>
+                        </article>
+                        <article class="product-card" data-product-id="123" style="z-index: 999;">
+                            <div class="product-card__top">
+                              <div class="product-card__tags">
+                                <span class="tag">Акція</span>
+                              </div>
+                              <a href="" class="product-card__favorite is-added" title="Додати до вибраних" alt="Додати до вибраних">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M13.5 1L16.2038 8.77852L24.4371 8.9463L17.8749 13.9215L20.2595 21.8037L13.5 17.1L6.74047 21.8037L9.12514 13.9215L2.56285 8.9463L10.7962 8.77852L13.5 1Z" stroke="#333333" stroke-linejoin="round"/>
+                                  <rect class="cross-line" x="1.23438" y="20.458" width="29" height="1" transform="rotate(-38.0739 1.23438 20.458)" fill="#333333"/>
+                                  <rect class="cross-line" y="18.8838" width="29" height="2" transform="rotate(-38.0739 0 18.8838)" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                            <a href="" class="product-card__link">
+                                <div class="product-card__img">
+                                    <img src="./../img/product-card-img-1.png" alt="vine">
+                                </div>
+                              <div class="product-card__info">
+                                  <div class="product-card__title">
+                                      <h3>Скляна пляшка Dorato<br>750ml</h3>
+                                  </div>
+                                  <div class="product-card__about">
+                                    <ul class="product-card__spec">
+                                      <li>
+                                        <img src="./img/ico-product-card_1.svg" alt="ico-card-img">
+                                        <span>200 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_2.svg" alt="ico-card-img">
+                                        <span>75 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_3.svg" alt="ico-card-img">
+                                        <span>640 г</span>
+                                      </li>
+                                    </ul>
+                                    <div class="product-card__content">
+                                      <div class="product-card__price">
+                                        <div class="product-card__price--old">
+                                          <span>31.53 ₴</span>
+                                        </div>
+                                        <div class="product-card__price--new">
+                                          <span>312.53 ₴</span>
+                                        </div>
+                                      </div>
+                                      <div class="product-card__package">
+                                        <p>231 шт. × 31.53 ₴ <br>в упаковці</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </a>
+                            <div class="product-card__buttons">
+                              <div class="product-card__row">
+                                <button class="btn btn--medium">У кошик</button>
+                                <div class="product-card__quantity quantity">
+                                  <button type="button" class="quantity__btn" data-direction="minus">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect y="4" width="4" height="14" transform="rotate(-90 0 4)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                  <input class="quantity__input" type="text" min="1" max="" value="1" readonly="" name="Quantity">
+                                  <button type="button" class="quantity__btn" data-direction="plus">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect x="5" width="4" height="14" fill="#E0E0E0"></rect>
+                                      <rect y="9" width="4" height="14" transform="rotate(-90 0 9)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <a href="" class="section-link">Замовити оптову кількість</a>
+                            </div>
+                        </article>
+                        <article class="product-card" data-product-id="123" style="z-index: 999;">
+                            <div class="product-card__top">
+                              <div class="product-card__tags">
+                                <span class="tag">Акція</span>
+                              </div>
+                              <a href="" class="product-card__favorite is-added" title="Додати до вибраних" alt="Додати до вибраних">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M13.5 1L16.2038 8.77852L24.4371 8.9463L17.8749 13.9215L20.2595 21.8037L13.5 17.1L6.74047 21.8037L9.12514 13.9215L2.56285 8.9463L10.7962 8.77852L13.5 1Z" stroke="#333333" stroke-linejoin="round"/>
+                                  <rect class="cross-line" x="1.23438" y="20.458" width="29" height="1" transform="rotate(-38.0739 1.23438 20.458)" fill="#333333"/>
+                                  <rect class="cross-line" y="18.8838" width="29" height="2" transform="rotate(-38.0739 0 18.8838)" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                            <a href="" class="product-card__link">
+                                <div class="product-card__img">
+                                    <img src="./../img/product-card-img-1.png" alt="vine">
+                                </div>
+                              <div class="product-card__info">
+                                  <div class="product-card__title">
+                                      <h3>Скляна пляшка Dorato<br>750ml</h3>
+                                  </div>
+                                  <div class="product-card__about">
+                                    <ul class="product-card__spec">
+                                      <li>
+                                        <img src="./img/ico-product-card_1.svg" alt="ico-card-img">
+                                        <span>200 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_2.svg" alt="ico-card-img">
+                                        <span>75 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_3.svg" alt="ico-card-img">
+                                        <span>640 г</span>
+                                      </li>
+                                    </ul>
+                                    <div class="product-card__content">
+                                      <div class="product-card__price">
+                                        <div class="product-card__price--old">
+                                          <span>31.53 ₴</span>
+                                        </div>
+                                        <div class="product-card__price--new">
+                                          <span>312.53 ₴</span>
+                                        </div>
+                                      </div>
+                                      <div class="product-card__package">
+                                        <p>231 шт. × 31.53 ₴ <br>в упаковці</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </a>
+                            <div class="product-card__buttons">
+                              <div class="product-card__row">
+                                <button class="btn btn--medium">У кошик</button>
+                                <div class="product-card__quantity quantity">
+                                  <button type="button" class="quantity__btn" data-direction="minus">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect y="4" width="4" height="14" transform="rotate(-90 0 4)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                  <input class="quantity__input" type="text" min="1" max="" value="1" readonly="" name="Quantity">
+                                  <button type="button" class="quantity__btn" data-direction="plus">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect x="5" width="4" height="14" fill="#E0E0E0"></rect>
+                                      <rect y="9" width="4" height="14" transform="rotate(-90 0 9)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <a href="" class="section-link">Замовити оптову кількість</a>
+                            </div>
+                        </article>
+                        <article class="product-card" data-product-id="123" style="z-index: 999;">
+                            <div class="product-card__top">
+                              <div class="product-card__tags">
+                                <span class="tag">Акція</span>
+                              </div>
+                              <a href="" class="product-card__favorite is-added" title="Додати до вибраних" alt="Додати до вибраних">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M13.5 1L16.2038 8.77852L24.4371 8.9463L17.8749 13.9215L20.2595 21.8037L13.5 17.1L6.74047 21.8037L9.12514 13.9215L2.56285 8.9463L10.7962 8.77852L13.5 1Z" stroke="#333333" stroke-linejoin="round"/>
+                                  <rect class="cross-line" x="1.23438" y="20.458" width="29" height="1" transform="rotate(-38.0739 1.23438 20.458)" fill="#333333"/>
+                                  <rect class="cross-line" y="18.8838" width="29" height="2" transform="rotate(-38.0739 0 18.8838)" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                            <a href="" class="product-card__link">
+                                <div class="product-card__img">
+                                    <img src="./../img/product-card-img-1.png" alt="vine">
+                                </div>
+                              <div class="product-card__info">
+                                  <div class="product-card__title">
+                                      <h3>Скляна пляшка Dorato<br>750ml</h3>
+                                  </div>
+                                  <div class="product-card__about">
+                                    <ul class="product-card__spec">
+                                      <li>
+                                        <img src="./img/ico-product-card_1.svg" alt="ico-card-img">
+                                        <span>200 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_2.svg" alt="ico-card-img">
+                                        <span>75 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_3.svg" alt="ico-card-img">
+                                        <span>640 г</span>
+                                      </li>
+                                    </ul>
+                                    <div class="product-card__content">
+                                      <div class="product-card__price">
+                                        <div class="product-card__price--old">
+                                          <span>31.53 ₴</span>
+                                        </div>
+                                        <div class="product-card__price--new">
+                                          <span>312.53 ₴</span>
+                                        </div>
+                                      </div>
+                                      <div class="product-card__package">
+                                        <p>231 шт. × 31.53 ₴ <br>в упаковці</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </a>
+                            <div class="product-card__buttons">
+                              <div class="product-card__row">
+                                <button class="btn btn--medium">У кошик</button>
+                                <div class="product-card__quantity quantity">
+                                  <button type="button" class="quantity__btn" data-direction="minus">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect y="4" width="4" height="14" transform="rotate(-90 0 4)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                  <input class="quantity__input" type="text" min="1" max="" value="1" readonly="" name="Quantity">
+                                  <button type="button" class="quantity__btn" data-direction="plus">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect x="5" width="4" height="14" fill="#E0E0E0"></rect>
+                                      <rect y="9" width="4" height="14" transform="rotate(-90 0 9)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <a href="" class="section-link">Замовити оптову кількість</a>
+                            </div>
+                        </article>
+                        <article class="product-card" data-product-id="123" style="z-index: 999;">
+                            <div class="product-card__top">
+                              <div class="product-card__tags">
+                                <span class="tag">Акція</span>
+                              </div>
+                              <a href="" class="product-card__favorite is-added" title="Додати до вибраних" alt="Додати до вибраних">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M13.5 1L16.2038 8.77852L24.4371 8.9463L17.8749 13.9215L20.2595 21.8037L13.5 17.1L6.74047 21.8037L9.12514 13.9215L2.56285 8.9463L10.7962 8.77852L13.5 1Z" stroke="#333333" stroke-linejoin="round"/>
+                                  <rect class="cross-line" x="1.23438" y="20.458" width="29" height="1" transform="rotate(-38.0739 1.23438 20.458)" fill="#333333"/>
+                                  <rect class="cross-line" y="18.8838" width="29" height="2" transform="rotate(-38.0739 0 18.8838)" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                            <a href="" class="product-card__link">
+                                <div class="product-card__img">
+                                    <img src="./../img/product-card-img-1.png" alt="vine">
+                                </div>
+                              <div class="product-card__info">
+                                  <div class="product-card__title">
+                                      <h3>Скляна пляшка Dorato<br>750ml</h3>
+                                  </div>
+                                  <div class="product-card__about">
+                                    <ul class="product-card__spec">
+                                      <li>
+                                        <img src="./img/ico-product-card_1.svg" alt="ico-card-img">
+                                        <span>200 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_2.svg" alt="ico-card-img">
+                                        <span>75 мм</span>
+                                      </li>
+                                      <li>
+                                        <img src="./img/ico-product-card_3.svg" alt="ico-card-img">
+                                        <span>640 г</span>
+                                      </li>
+                                    </ul>
+                                    <div class="product-card__content">
+                                      <div class="product-card__price">
+                                        <div class="product-card__price--old">
+                                          <span>31.53 ₴</span>
+                                        </div>
+                                        <div class="product-card__price--new">
+                                          <span>312.53 ₴</span>
+                                        </div>
+                                      </div>
+                                      <div class="product-card__package">
+                                        <p>231 шт. × 31.53 ₴ <br>в упаковці</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </a>
+                            <div class="product-card__buttons">
+                              <div class="product-card__row">
+                                <button class="btn btn--medium">У кошик</button>
+                                <div class="product-card__quantity quantity">
+                                  <button type="button" class="quantity__btn" data-direction="minus">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect y="4" width="4" height="14" transform="rotate(-90 0 4)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                  <input class="quantity__input" type="text" min="1" max="" value="1" readonly="" name="Quantity">
+                                  <button type="button" class="quantity__btn" data-direction="plus">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect x="5" width="4" height="14" fill="#E0E0E0"></rect>
+                                      <rect y="9" width="4" height="14" transform="rotate(-90 0 9)" fill="#E0E0E0"></rect>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <a href="" class="section-link">Замовити оптову кількість</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <span aria-current="page" class="page-numbers current">1</span>
+                    <a class="page-numbers" href="https://fordev.zaborona.com/notifications/page/2/">2</a>
+                    <a class="page-numbers" href="https://fordev.zaborona.com/notifications/page/3/">3</a>
+                    <a class="page-numbers" href="https://fordev.zaborona.com/notifications/page/3/">4</a>
+                    <a class="page-numbers" href="https://fordev.zaborona.com/notifications/page/3/">32</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer" >
+  <div class="container">
+    <div class="footer__logo">
+      <a href="#">
+        <img src="./../img/ico-logo-fotter.svg" width="204" height="63" alt="Logo">
+      </a>
+    </div>
+    <div class="footer__container">
+      <div class="footer__block">
+        <div class="footer__row">
+          <div class="footer__info">
+            <div class="footer__title title-h6">
+              <a href="#">Про компанію</a>
+            </div>
+            <div class="footer__title title-h6">
+              <a href="#">Публікації</a>
+            </div>
+            <div class="footer__title title-h6">
+              <a href="#">Оплата і доставка</a>
+            </div>
+            <div class="footer__title title-h6">
+              <a href="#">Контакти</a>
+            </div>
+          </div>
+          <div class="footer__info">
+            <div class="footer__title title-h6">
+              <h3>Продукція</h3>
+            </div>
+            <ul class="footer__list">
+              <li>
+                <a href="#">Склотара</a>
+              </li>
+              <li>
+                <a href="#">Тематична склотара</a>
+              </li>
+              <li>
+                <a href="#">Кришки</a>
+              </li>
+              <li>
+                <a href="#">Кришки для дитячого харчування</a>
+              </li>
+              <li>
+                <a href="#">Гофроскриньки</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__block footer__nav--mobile">
+        <div class="footer__row">
+          <div class="footer__info">
+            <div class="footer__title title-h6">
+              <h3>Головний офіс</h3>
+            </div>
+            <ul class="footer__list">
+              <li>
+                <address>м. Київ, вул. Братська 10, оф. 1, метро Контрактова площа</address>
+              </li>
+              <li>
+                <a href="mailto:bfnkasteklo.com@gmail.com">bfnkasteklo.com@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <div class="footer__title title-h6">
+              <h3>Гуртовий склад</h3>
+            </div>
+            <ul class="footer__list">
+              <li>
+                <address>м. Київ, бул. Академіка Вернадського 36-В</address>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <div class="footer__title title-h6">
+              <h3>Роздрібний склад</h3>
+            </div>
+            <ul class="footer__list">
+              <li>
+                <address>м. Київ, просп. Степана Бандери 21-А</address>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__row">
+          <div class="footer__contact">
+            <div class="footer__phone">
+              <a href="tel:0504008592">(050) 400-85-92</a>
+            </div>
+            <div class="footer__phone">
+              <a href="tel:0976906989">(097) 690-69-89</a>
+              <span>Оптові замовлення</span>
+            </div>
+          </div>
+          <ul class="footer__socials socials">
+            <li>
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 16C4 21.9333 8.33333 26.8667 14 27.8667L14.0671 27.813C14.0447 27.8087 14.0224 27.8043 14 27.7998V19.3332H11V15.9998H14V13.3332C14 10.3332 15.9333 8.6665 18.6667 8.6665C19.5333 8.6665 20.4667 8.79984 21.3333 8.93317V11.9998H19.8C18.3333 11.9998 18 12.7332 18 13.6665V15.9998H21.2L20.6667 19.3332H18V27.7998C17.9776 27.8043 17.9553 27.8087 17.9329 27.813L18 27.8667C23.6667 26.8667 28 21.9333 28 16C28 9.4 22.6 4 16 4C9.4 4 4 9.4 4 16Z" fill="#BDBDBD"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.0005 4.36377C12.8404 4.36377 12.4438 4.37759 11.2026 4.43407C9.96384 4.4908 9.11829 4.68692 8.37843 4.97468C7.61312 5.27189 6.96393 5.66947 6.31716 6.3165C5.66991 6.96328 5.27235 7.6125 4.97417 8.37759C4.6857 9.11771 4.48934 9.96353 4.43358 11.2018C4.37807 12.443 4.36353 12.8399 4.36353 16.0001C4.36353 19.1604 4.37759 19.5558 4.43383 20.797C4.49079 22.0358 4.68691 22.8813 4.97442 23.6212C5.27186 24.3866 5.66943 25.0358 6.31644 25.6826C6.96296 26.3298 7.61215 26.7284 8.37698 27.0256C9.11732 27.3133 9.96311 27.5095 11.2016 27.5662C12.4428 27.6227 12.8391 27.6365 15.9991 27.6365C19.1594 27.6365 19.5548 27.6227 20.796 27.5662C22.0347 27.5095 22.8813 27.3133 23.6216 27.0256C24.3867 26.7284 25.0349 26.3298 25.6814 25.6826C26.3287 25.0358 26.7262 24.3866 27.0244 23.6215C27.3105 22.8813 27.5068 22.0355 27.565 20.7972C27.6208 19.556 27.6353 19.1604 27.6353 16.0001C27.6353 12.8399 27.6208 12.4433 27.565 11.2021C27.5068 9.96328 27.3105 9.11771 27.0244 8.37783C26.7262 7.6125 26.3287 6.96328 25.6814 6.3165C25.0342 5.66922 24.3869 5.27165 23.6209 4.97468C22.8791 4.68692 22.0331 4.4908 20.7943 4.43407C19.5531 4.37759 19.158 4.36377 15.9969 4.36377H16.0005ZM14.9567 6.46074C15.2665 6.46025 15.6122 6.46074 16.0005 6.46074C19.1073 6.46074 19.4756 6.47189 20.7024 6.52765C21.8369 6.57953 22.4527 6.7691 22.8628 6.92838C23.4059 7.13928 23.793 7.39141 24.2 7.79868C24.6073 8.20595 24.8594 8.59383 25.0708 9.13686C25.23 9.54656 25.4199 10.1623 25.4715 11.2969C25.5272 12.5235 25.5394 12.892 25.5394 15.9975C25.5394 19.1029 25.5272 19.4714 25.4715 20.6981C25.4196 21.8326 25.23 22.4484 25.0708 22.8581C24.8599 23.4011 24.6073 23.7878 24.2 24.1948C23.7928 24.6021 23.4061 24.8542 22.8628 25.0651C22.4532 25.2251 21.8369 25.4142 20.7024 25.4661C19.4758 25.5218 19.1073 25.5339 16.0005 25.5339C12.8934 25.5339 12.5252 25.5218 11.2986 25.4661C10.1641 25.4137 9.54834 25.2241 9.13793 25.0649C8.59491 24.8539 8.20705 24.6018 7.79978 24.1946C7.39252 23.7873 7.14041 23.4004 6.92902 22.8571C6.76976 22.4474 6.57994 21.8316 6.52831 20.6971C6.47255 19.4704 6.4614 19.1019 6.4614 15.9946C6.4614 12.8872 6.47255 12.5206 6.52831 11.294C6.58019 10.1594 6.76976 9.54365 6.92902 9.13347C7.13993 8.59044 7.39252 8.20256 7.79978 7.79528C8.20705 7.38801 8.59491 7.13589 9.13793 6.9245C9.5481 6.7645 10.1641 6.57541 11.2986 6.52328C12.372 6.4748 12.788 6.46025 14.9567 6.45783V6.46074ZM22.2117 8.39286C21.4408 8.39286 20.8154 9.01759 20.8154 9.78874C20.8154 10.5596 21.4408 11.1851 22.2117 11.1851C22.9826 11.1851 23.608 10.5596 23.608 9.78874C23.608 9.01783 22.9826 8.39237 22.2117 8.39237V8.39286ZM16.0005 10.0244C12.7005 10.0244 10.0249 12.7 10.0249 16.0001C10.0249 19.3003 12.7005 21.9747 16.0005 21.9747C19.3005 21.9747 21.9751 19.3003 21.9751 16.0001C21.9751 12.7 19.3003 10.0244 16.0003 10.0244H16.0005ZM16.0005 12.1213C18.1425 12.1213 19.8792 13.8578 19.8792 16.0001C19.8792 18.1422 18.1425 19.8789 16.0005 19.8789C13.8583 19.8789 12.1218 18.1422 12.1218 16.0001C12.1218 13.8578 13.8583 12.1213 16.0005 12.1213Z" fill="#BDBDBD"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3622 10.7852C26.3713 11.0183 26.3743 11.2514 26.3743 11.4846C26.3743 18.5542 21.4012 26.7157 12.3071 26.7157C9.51351 26.7157 6.91591 25.8253 4.72729 24.3096C5.11417 24.352 5.50708 24.3839 5.90602 24.3839C8.22225 24.3839 10.3556 23.5252 12.0478 22.0837C9.88432 22.0519 8.05746 20.4939 7.4274 18.374C7.72987 18.4376 8.04136 18.4695 8.35991 18.4695C8.80909 18.4695 9.2452 18.406 9.66323 18.2788C7.39924 17.7912 5.69399 15.6291 5.69399 13.0323C5.69399 13.0005 5.69399 12.9898 5.69399 12.9686C6.36123 13.3608 7.12492 13.6045 7.93585 13.6363C6.60741 12.6717 5.73416 11.0289 5.73416 9.17408C5.73416 8.19897 5.97734 7.2768 6.40542 6.48187C8.84324 9.7252 12.488 11.8556 16.5969 12.0782C16.5125 11.6861 16.4693 11.2728 16.4693 10.8594C16.4693 7.90229 18.683 5.50684 21.4142 5.50684C22.8361 5.50684 24.1204 6.15347 25.0217 7.19219C26.1502 6.95901 27.2073 6.51387 28.164 5.89913C27.7932 7.14982 27.0104 8.19892 25.9874 8.85606C26.9883 8.72887 27.9429 8.44291 28.8282 8.01895C28.164 9.08946 27.3279 10.0326 26.3622 10.7852Z" fill="#BDBDBD"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.4339 7.4839L5.16841 14.9146C3.8535 15.4422 3.8613 16.1756 4.92874 16.5026L9.73361 18.0023L11.5721 23.6389C11.7956 24.2558 11.6854 24.5005 12.3332 24.5005C12.8332 24.5005 13.0549 24.2725 13.3334 24.0005C13.5105 23.8273 14.5618 22.8051 15.7357 21.6638L20.7337 25.3565C21.6533 25.8639 22.3174 25.601 22.5464 24.5023L25.8272 9.04205C26.1631 7.69538 25.3138 7.08454 24.4339 7.4839ZM10.4877 17.6578L21.3179 10.8249C21.8585 10.497 22.3543 10.6733 21.9472 11.0346L12.6738 19.4016L12.3127 23.2528L10.4877 17.6578Z" fill="#BDBDBD"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0949 3.94445C20.0666 4.09051 22.8358 5.31597 24.9508 7.43239C27.2068 9.6898 28.4485 12.6905 28.4473 15.8816C28.4446 22.4668 23.0837 27.8248 16.4982 27.8248C14.0217 27.8248 12.0537 27.0639 10.783 26.3711L4.44849 28.0319L6.14374 21.843C5.09805 20.0317 4.54782 17.9772 4.54868 15.8722C4.55132 9.28716 9.91174 3.92969 16.498 3.92969L17.0949 3.94445ZM11.0764 24.209L11.4391 24.4241C12.964 25.3285 14.7119 25.8071 16.4941 25.8078H16.4981C21.9722 25.8078 26.4276 21.3545 26.4298 15.881C26.4308 13.2285 25.3987 10.7345 23.5236 8.85814C21.6484 6.98171 19.1548 5.94775 16.5021 5.94688C11.0238 5.94688 6.56837 10.3997 6.56619 15.8728C6.56544 17.7486 7.0905 19.5753 8.08468 21.1557L8.32082 21.5314L7.3175 25.1945L11.0764 24.209ZM22.518 18.7217C22.4434 18.5971 22.2444 18.5225 21.9458 18.3731C21.6473 18.2237 20.1794 17.5018 19.9057 17.4021C19.632 17.3027 19.4329 17.2529 19.2339 17.5516C19.0349 17.8503 18.4627 18.5225 18.2885 18.7217C18.1144 18.9208 17.9402 18.9458 17.6417 18.7964C17.3431 18.6471 16.3811 18.3319 15.2407 17.3152C14.3531 16.5239 13.7538 15.5467 13.5797 15.2479C13.4055 14.9492 13.5611 14.7876 13.7106 14.6389C13.8449 14.5051 14.0092 14.2903 14.1585 14.116C14.3078 13.9418 14.3575 13.8173 14.457 13.6182C14.5565 13.419 14.5068 13.2448 14.4321 13.0954C14.3575 12.946 13.7604 11.4771 13.5116 10.8795C13.2692 10.2977 13.023 10.3765 12.8398 10.3673C12.6658 10.3586 12.4666 10.3567 12.2676 10.3567C12.0685 10.3567 11.7451 10.4314 11.4714 10.7302C11.1977 11.0289 10.4264 11.751 10.4264 13.2197C10.4264 14.6887 11.4963 16.1076 11.6456 16.3068C11.7949 16.5061 13.7509 19.5202 16.746 20.8129C17.4583 21.1204 18.0145 21.304 18.4481 21.4415C19.1633 21.6686 19.8142 21.6366 20.3287 21.5598C20.9023 21.4741 22.0951 20.8378 22.3439 20.1409C22.5927 19.4436 22.5927 18.8462 22.518 18.7217Z" fill="#BDBDBD"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2022 Velena. Усі права захищено</span>
+      <div class="footer__bottom--img">
+        <img src="./../img/ico-footer-img1.png" width="48" height="30" alt="card-pay">
+        <img src="./../img/ico-footer-img2.png" width="48" height="30" alt="card-pay">
+        <img src="./../img/ico-footer-img3.png" width="48" height="30" alt="card-pay">
+      </div>
+      <a class="footer__bottom--create">
+        <img src="./../img/ico-footer-bottom.svg" width="106" height="29" alt="logo">
+        <span>Сайт створено у Page Media Solutions</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div style="display: none;">
+  <div class="popup-search" id="popup-search">
+    <div class="popup-search__inner">
+      <div class="popup-search__content">
+        <form class="header__search-form is-open">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+            <defs>
+              <clipPath id="clip-path-5">
+                <rect width="30" height="30" transform="translate(944 -278)" fill="#fff"></rect>
+              </clipPath>
+            </defs>
+            <g transform="translate(-944 278)" clip-path="url(#clip-path-5)">
+              <path d="M16.222,14.8a1,1,0,1,0-1.415,1.413ZM1,9.5H1ZM9.5,1V1Zm3.138,4.23-.77-.638-1.276,1.54.77.638ZM13,10v1h2V10Zm7.708,9.294L16.222,14.8l-1.415,1.413,4.486,4.494ZM17,9.5a7.5,7.5,0,0,1-2.2,5.3l1.414,1.414A9.5,9.5,0,0,0,19,9.5Zm-2.2,5.3A7.5,7.5,0,0,1,9.5,17v2a9.5,9.5,0,0,0,6.718-2.782ZM9.5,17a7.5,7.5,0,0,1-5.3-2.2L2.782,16.218A9.5,9.5,0,0,0,9.5,19ZM4.2,14.8A7.5,7.5,0,0,1,2,9.5H0a9.5,9.5,0,0,0,2.782,6.718ZM2,9.5A7.5,7.5,0,0,1,4.2,4.2L2.782,2.782A9.5,9.5,0,0,0,0,9.5ZM4.2,4.2A7.5,7.5,0,0,1,9.5,2V0A9.5,9.5,0,0,0,2.782,2.782ZM9.5,2a7.5,7.5,0,0,1,5.3,2.2l1.414-1.414A9.5,9.5,0,0,0,9.5,0Zm5.3,2.2A7.5,7.5,0,0,1,17,9.5h2a9.5,9.5,0,0,0-2.782-6.718ZM11.362,6.77A4.218,4.218,0,0,1,13,10h2a6.214,6.214,0,0,0-2.362-4.77Z" transform="translate(949 -273)" class="hover-fill" fill="#333"></path>
+            </g>
+          </svg>
+          <input type="text" name="search" placeholder="Шукати..." required="">
+
+          <div class="header__search-list"><ul></ul></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const center_setting = new google.maps.LatLng(50.437555031354, 30.692406332324);
+  const zoon_setting = 13; 
+  const TEMPLATE_PATH = 'https://cherry.blackbook.dev/'
+  let markerImage = {
+    url: TEMPLATE_PATH + 'img/marker.svg',
+    scaledSize: new google.maps.Size(70, 104),
+  }
+
+  const features = [];
+  features.push({
+      position: new google.maps.LatLng(50.519351, 30.4904051),
+      itemId: '0'
+  })
+  features.push({
+      position: new google.maps.LatLng(50.510134, 30.508235),
+      itemId: '1'
+  })
+  features.push({
+      position: new google.maps.LatLng(50.4255396, 30.6493691),
+      itemId: '2'
+  })
+
+ 
+  function initMap(){
+    let map = new google.maps.Map(document.getElementById("map"), {
+        center: center_setting,
+        zoom: zoon_setting,
+        styles: [
+            {
+                featureType: "administrative",
+                elementType: "labels",
+                stylers: [
+                    {
+                        visibility: "on",
+                    },
+                ],
+            },
+            {
+                featureType: "administrative.country",
+                elementType: "geometry.stroke",
+                stylers: [
+                    {
+                        visibility: "on",
+                    },
+                ],
+            },
+            {
+                featureType: "administrative.province",
+                elementType: "geometry.stroke",
+                stylers: [
+                    {
+                        visibility: "on",
+                    },
+                ],
+            },
+            {
+                featureType: "landscape",
+                elementType: "geometry",
+                stylers: [
+                    {
+                        visibility: "on",
+                    },
+                    {
+                        color: "#F5F5F5",
+                    },
+                ],
+            },
+            {
+                featureType: "landscape.natural",
+                elementType: "labels",
+                stylers: [
+                    {
+                        visibility: "off",
+                    },
+                ],
+            },
+            {
+                featureType: "poi",
+                elementType: "all",
+                stylers: [
+                    {
+                        visibility: "off",
+                    },
+                ],
+            },
+            {
+                featureType: "road",
+                elementType: "all",
+                stylers: [
+                    {
+                        color: "#C9C9C9",
+                    },
+                ],
+            },
+            {
+                featureType: "road",
+                elementType: "labels",
+                stylers: [
+                    {
+                        visibility: "off",
+                    },
+                ],
+            },
+            {
+                featureType: "transit",
+                elementType: "labels.icon",
+                stylers: [
+                    {
+                        visibility: "off",
+                    },
+                ],
+            },
+            {
+                featureType: "transit.line",
+                elementType: "geometry",
+                stylers: [
+                    {
+                        visibility: "off",
+                    },
+                ],
+            },
+            {
+                featureType: "transit.line",
+                elementType: "labels.text",
+                stylers: [
+                    {
+                        visibility: "on",
+                    },
+                ],
+            },
+            {
+                featureType: "transit.station.airport",
+                elementType: "geometry",
+                stylers: [
+                    {
+                        visibility: "off",
+                    },
+                ],
+            },
+            {
+                featureType: "transit.station.airport",
+                elementType: "labels",
+                stylers: [
+                    {
+                        visibility: "off",
+                    },
+                ],
+            },
+            {
+                featureType: "water",
+                elementType: "geometry",
+                stylers: [
+                    {
+                        color: "#C9C9C9",
+                    },
+                ],
+            },
+            {
+                featureType: "water",
+                elementType: "labels",
+                stylers: [
+                    {
+                        visibility: "off",
+                    },
+                ],
+            },
+        ],
+    });
+    let marker;
+    const addressList = $('.contact__place li');
+    let bounds = new google.maps.LatLngBounds();
+
+    for (let i = 0; i < features.length; i++) {
+      marker = new google.maps.Marker({
+          position: features[i].position,
+          map: map,
+          icon: markerImage,
+          itemId: features[i].itemId
+      });
+
+      bounds.extend(marker.position);
+
+      google.maps.event.addListener(marker, 'click', function() {
+          if(!this['itemId']) return;
+
+          map.panTo(this.position);
+          map.setZoom(15);
+
+          let thisItem = $('.contact__place [data-id="'+this['itemId']+'"]')         
+
+          thisItem.addClass('is-active')
+          thisItem.siblings().removeClass('is-active')
+      });    
+    }
+
+    map.fitBounds(bounds, 90);
+
+    addressList.on('click', function(){
+        let thisId = $(this).attr('data-id')
+        $(this).addClass('is-active')
+        $(this).siblings().removeClass('is-active')
+
+        let thisMarker = features.filter(function (item) {
+          return item['itemId'] == thisId;          
+        })
+        
+        if(thisMarker.length){
+          map.panTo(thisMarker[0].position);
+          map.setZoom(15);
+        }
+      })    
+  }
+
+  if(document.getElementById("map"))
+    initMap()
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script src="js/main.js"></script>
+
+  </div>
+</body>
+
+</html>
